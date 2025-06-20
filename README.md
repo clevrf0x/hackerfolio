@@ -14,33 +14,7 @@ A modern, responsive portfolio and blog site for penetration testers and securit
 
 ## 📸 Screenshots
 
-### Home Page
-
-![Home](public/screenshots/home.png)
-
-### About Page
-
-![About](public/screenshots/about.png)
-
-### Blog List Page
-
-![Blog](public/screenshots/blog.png)
-
-### Blog Detail Page
-
-![Blog Detail](public/screenshots/blog-detail.png)
-
-### CVE Page
-
-![CVE](public/screenshots/cve.png)
-
-### Tools Page
-
-![Tools](public/screenshots/tools.png)
-
-### 404 Not Found Page
-
-![Not Found](public/screenshots/notfound.png)
+See [SCREENSHOTS.md](./SCREENSHOTS.md) for screenshots of all pages and UI states.
 
 ---
 
