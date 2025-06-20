@@ -103,7 +103,7 @@ function App() {
   return (
     <ColorModeContext.Provider value={{ colorMode, toggleColorMode }}>
       <Router>
-        <div className='min-h-screen bg-gray-900 text-white'>
+        <div className='flex flex-col min-h-screen bg-gray-900 text-white'>
           <ColorSafelist />
           <Header
             colorMode={colorMode}
@@ -111,7 +111,7 @@ function App() {
             activeSection={activeSection}
             setActiveSection={setActiveSection}
           />
-          <main className='pb-16'>
+          <main className='flex-1 pb-16'>
             <Routes>
               <Route path='/' element={<Home blogPosts={blogPosts} loading={blogLoading} />} />
               <Route path='/about' element={<About />} />

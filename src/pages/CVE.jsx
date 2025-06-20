@@ -31,27 +31,27 @@ const cves = [
     description: 'An input validation vulnerability leading to remote code execution.',
     url: '#',
   },
-  {
-    id: 'CVE-2024-0566',
-    description: 'A SQL injection vulnerability allowing data exfiltration in web applications.',
-    url: '#',
-  },
-  {
-    id: 'CVE-2024-30240',
-    description:
-      'A critical SQL injection vulnerability allowing authentication bypass in systems.',
-    url: '#',
-  },
-  {
-    id: 'CVE-2024-31370',
-    description: 'An injection vulnerability allowing arbitrary code execution.',
-    url: '#',
-  },
-  {
-    id: 'CVE-2024-33911',
-    description: 'A vulnerability affecting system configurations and security controls.',
-    url: '#',
-  },
+  // {
+  //   id: 'CVE-2024-0566',
+  //   description: 'A SQL injection vulnerability allowing data exfiltration in web applications.',
+  //   url: '#',
+  // },
+  // {
+  //   id: 'CVE-2024-30240',
+  //   description:
+  //     'A critical SQL injection vulnerability allowing authentication bypass in systems.',
+  //   url: '#',
+  // },
+  // {
+  //   id: 'CVE-2024-31370',
+  //   description: 'An injection vulnerability allowing arbitrary code execution.',
+  //   url: '#',
+  // },
+  // {
+  //   id: 'CVE-2024-33911',
+  //   description: 'A vulnerability affecting system configurations and security controls.',
+  //   url: '#',
+  // },
 ];
 
 const CVE = () => {
