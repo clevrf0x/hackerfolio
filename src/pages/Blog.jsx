@@ -33,13 +33,13 @@ const Blog = ({ blogPosts, loading }) => {
     );
   }
   return (
-    <div className='max-w-4xl mx-auto mt-16 px-4'>
+    <div className='max-w-4xl mx-auto mt-8 md:mt-16 px-2 sm:px-4'>
       <h1 className='text-3xl md:text-4xl font-bold text-white font-mono mb-2'>Blog</h1>
-      <p className='text-gray-300 font-mono mb-10 text-base max-w-3xl'>
+      <p className='text-gray-300 font-mono mb-6 md:mb-10 text-base max-w-3xl'>
         Security research, exploit development, and technical write-ups covering various aspects of
         offensive security and penetration testing.
       </p>
-      <div className='flex flex-col gap-8'>
+      <div className='flex flex-col gap-6 md:gap-8'>
         {validPosts.map(post => (
           <BlogCard
             key={post.slug}

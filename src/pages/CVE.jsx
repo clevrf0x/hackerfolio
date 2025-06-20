@@ -60,13 +60,13 @@ const CVE = () => {
   const activeColor = getActiveColor(colorMode);
 
   return (
-    <div className='max-w-5xl mx-auto mt-12 px-4'>
+    <div className='max-w-5xl mx-auto mt-8 md:mt-12 px-2 sm:px-4'>
       <h1 className='text-3xl md:text-4xl font-bold text-white font-mono mb-2'>CVEs</h1>
-      <p className='text-gray-400 font-mono mb-10 text-base'>
+      <p className='text-gray-400 font-mono mb-6 md:mb-10 text-base'>
         Common Vulnerabilities and Exposures (CVEs) discovered and responsibly disclosed as part of
         security research and penetration testing efforts.
       </p>
-      <div className='grid md:grid-cols-3 gap-8'>
+      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8'>
         {cves.map(cve => (
           <div
             key={cve.id}

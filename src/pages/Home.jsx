@@ -29,7 +29,7 @@ const Home = ({ blogPosts = [] }) => {
     .map(post => ({ ...post, date: formatDate(post.date) }));
 
   return (
-    <div className='max-w-5xl mx-auto mt-12 px-4'>
+    <div className='max-w-5xl mx-auto mt-8 md:mt-12 px-2 sm:px-4'>
       <div className='mb-12'>
         <h1 className='text-5xl md:text-6xl font-bold text-white font-mono mb-2 leading-tight'>
           Favas M
@@ -41,7 +41,7 @@ const Home = ({ blogPosts = [] }) => {
           Specialized in discovering and exploiting security vulnerabilities in web applications,
           networks, and infrastructure to help organizations improve their security posture.
         </p>
-        <div className='flex flex-wrap gap-4 mb-10'>
+        <div className='flex flex-wrap gap-3 md:gap-4 mb-6 md:mb-10'>
           <Link
             to='/blog'
             className={`bg-${activeColor}-900/40 text-${activeColor}-300 font-mono px-5 py-2 rounded shadow hover:bg-${activeColor}-800 hover:text-white border border-${activeColor}-400/40 transition-all text-lg`}>
@@ -54,12 +54,12 @@ const Home = ({ blogPosts = [] }) => {
           </Link>
         </div>
       </div>
-      <div className='mb-14'>
+      <div className='mb-8 md:mb-14'>
         <h2
           className={`text-2xl md:text-3xl font-bold text-white font-mono mb-6 border-b border-${activeColor}-400/30 pb-2`}>
           Expertise
         </h2>
-        <div className='grid md:grid-cols-3 gap-6'>
+        <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6'>
           <div
             className={`rounded-xl p-6 flex flex-col items-start gap-2 bg-[rgba(51,65,85,0.5)] border border-gray-500/50 transition-colors duration-200 hover:border-${activeColor}-400`}>
             <ShieldCheck className={`text-${activeColor}-400 mb-2`} size={32} />
@@ -95,12 +95,12 @@ const Home = ({ blogPosts = [] }) => {
           </div>
         </div>
       </div>
-      <div className='mb-10'>
+      <div className='mb-8 md:mb-10'>
         <h2
           className={`text-2xl md:text-3xl font-bold text-white font-mono mb-6 border-b border-${activeColor}-400/30 pb-2`}>
           Latest Posts
         </h2>
-        <div className='flex flex-col gap-8 mb-4'>
+        <div className='flex flex-col gap-6 md:gap-8 mb-2 md:mb-4'>
           {latestPosts.map(post => (
             <BlogCard key={post.slug} post={post} colorMode={colorMode} />
           ))}

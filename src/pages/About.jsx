@@ -57,9 +57,9 @@ const About = () => {
   const activeColor = getActiveColor(colorMode);
 
   return (
-    <div className='max-w-5xl mx-auto mt-16 px-4'>
+    <div className='max-w-5xl mx-auto mt-8 md:mt-16 px-2 sm:px-4'>
       <h1 className='text-3xl md:text-4xl font-bold text-white font-mono mb-8'>About Me</h1>
-      <div className='bg-[rgba(51,65,85,0.5)] border border-gray-500/50 rounded-xl p-6 md:p-8 mb-12 text-gray-200 font-mono text-base leading-relaxed shadow-lg'>
+      <div className='bg-[rgba(51,65,85,0.5)] border border-gray-500/50 rounded-xl p-4 sm:p-6 md:p-8 mb-8 md:mb-12 text-gray-200 font-mono text-base leading-relaxed shadow-lg'>
         <p className='mb-4'>
           I'm Favas M (clevrf0x), a penetration tester and security researcher with a passion for
           uncovering and exploiting vulnerabilities in web applications, networks, and
@@ -82,12 +82,14 @@ const About = () => {
           through blog posts, developing security tools, and contributing to the security community.
         </p>
       </div>
-      <h2 className='text-2xl md:text-3xl font-bold text-white font-mono mb-6'>Certifications</h2>
-      <div className='grid md:grid-cols-3 gap-6 mb-14'>
+      <h2 className='text-2xl md:text-3xl font-bold text-white font-mono mb-4 md:mb-6'>
+        Certifications
+      </h2>
+      <div className='grid sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 mb-10 md:mb-14'>
         {certifications.map(cert => (
           <div
             key={cert.name}
-            className='bg-[rgba(51,65,85,0.5)] border border-gray-500/50 rounded-xl p-5 flex flex-col items-start gap-3 shadow-lg relative'>
+            className='bg-[rgba(51,65,85,0.5)] border border-gray-500/50 rounded-xl p-4 flex flex-col items-start gap-2 md:gap-3 shadow-lg relative'>
             <div className='flex items-center gap-3 mb-2'>
               <img src={cert.badge} alt={cert.name} className='w-10 h-10 object-contain' />
               <span className='font-mono text-base text-gray-100 font-semibold leading-tight'>
@@ -115,9 +117,11 @@ const About = () => {
           </div>
         ))}
       </div>
-      <h2 className='text-2xl md:text-3xl font-bold text-white font-mono mb-6'>Get in Touch</h2>
-      <div className='bg-[rgba(51,65,85,0.5)] border border-gray-500/50 rounded-xl p-6 md:p-8 flex flex-col md:flex-row gap-8 font-mono text-white shadow-lg'>
-        <div className='flex-1 mb-4 md:mb-0'>
+      <h2 className='text-2xl md:text-3xl font-bold text-white font-mono mb-4 md:mb-6'>
+        Get in Touch
+      </h2>
+      <div className='bg-[rgba(51,65,85,0.5)] border border-gray-500/50 rounded-xl p-4 sm:p-6 md:p-8 flex flex-col md:flex-row gap-4 md:gap-8 font-mono text-white shadow-lg'>
+        <div className='flex-1 mb-2 md:mb-0'>
           <div className='font-semibold mb-2 text-lg text-white'>Contact Information</div>
           <a
             href='mailto:Favas@gmail.com'
