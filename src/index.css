@@ -1,0 +1,27 @@
+@import 'tailwindcss';
+
+html {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity, 1));
+  --tw-text-opacity: 1;
+  color: rgb(243 244 246 / var(--tw-text-opacity, 1));
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'JetBrains Mono', 'Fira Mono', ui-monospace, monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-size: 16px;
+  background: none;
+  color: inherit;
+}
+
+* {
+  font-family: 'JetBrains Mono', 'Fira Mono', ui-monospace, monospace !important;
+}
+
+p {
+  font-size: 16px;
+}
